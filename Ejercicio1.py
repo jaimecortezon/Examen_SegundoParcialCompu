@@ -9,15 +9,15 @@ print(df.tail(5))
 
 # Traducción de las columnas al castellano
 traducciones = {
-    'mpg': 'Consumo (millas por galón)',
+    'mpg': 'Consumo de millas por galón',
     'cylinders': 'Cilindros',
     'displacement': 'Desplazamiento',
     'horsepower': 'Potencia',
     'weight': 'Peso',
     'acceleration': 'Aceleración',
-    'model_year': 'Año del modelo',
+    'model_year': 'Año_modelo',
     'origin': 'Origen',
-    'car_name': 'Nombre del coche'
+    'car_name': 'Nombre_coche'
 }
 df = df.rename(columns=traducciones)
 
@@ -33,5 +33,5 @@ def conditional_mean(df, column, condition):
 
 # 4
 
-print('Media coches de antes del año 75:', conditional_mean(df, 'Consumo (millas por galón)', df['Año del modelo'] < 75))
-print('Media coches de después del año 75:', conditional_mean(df, 'Consumo (millas por galón)', df['Año del modelo'] > 75))
+print('Media de rendimiento de combustible en coches de antes del año 75:', conditional_mean(df, 'Consumo de millas por galón', df['Año_modelo'] < 75))
+print('Media de rendimiento de combustible en coches de después del año 75:', conditional_mean(df, 'Consumo de millas por galón', df['Año_modelo'] > 75))
