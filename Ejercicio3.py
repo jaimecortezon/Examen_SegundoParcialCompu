@@ -1,5 +1,8 @@
+import pandas as pd
+import numpy as np
+
 # Definir los nombres de las ciudades
-ciudades = ['Madrid', 'Barcelona', 'Valencia', 'Sevilla', 'Bilbao']
+ciudades = ['Madrid', 'Barcelona', 'Tokyo', 'Roma', 'Paris']
 
 # Generar la matriz de temperaturas
 temperaturas = np.random.uniform(-5.0, 43.0, size=(365, 5))

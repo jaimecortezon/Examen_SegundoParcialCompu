@@ -1,8 +1,12 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
 # 1
 df = pd.read_csv('mpg.csv')
 print(df['cylinders'].value_counts())
-vehiculo_potencia_maxima = df[df['horsepower'] == df['horsepower'].max()]['name'].values[0]
-print(vehiculo_potencia_maxima)
+vehiculo_potencia_mas_alta = df[df['horsepower'] == df['horsepower'].max()]['name'].values[0]
+print(vehiculo_potencia_mas_alta)
 
 # 2
 
