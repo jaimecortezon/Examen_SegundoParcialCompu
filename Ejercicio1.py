@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 # 1
 df = pd.read_csv('mpg.csv')
+print(df.head(3))
 print(df.tail(5))
 
 # Traducción de las columnas al castellano
