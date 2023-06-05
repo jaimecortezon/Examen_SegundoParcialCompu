@@ -11,18 +11,18 @@ temperaturas = np.random.uniform(-5.0, 43.0, size=(365, 5))
 temperaturas_df = pd.DataFrame(temperaturas, columns=nombres_ciudades)
 
 # Calcular la temperatura máxima por ciudad
-temperaturas_maximas = temperaturas_df.max()
+temperaturas_maximas_por_ciudad = temperaturas_df.max()
 
 # Calcular la temperatura promedio por día
-temperaturas_promedio = temperaturas_df.mean(axis=1)
+temperaturas_promedio_por_dia = temperaturas_df.mean(axis=1)
 
 # Encontrar el día con la temperatura más baja por ciudad
-dias_temperatura_minima = temperaturas_df.idxmin()
+dias_temperatura_mas_baja = temperaturas_df.idxmin()
 
 # Imprimir los resultados
 print("Temperatura máxima por ciudad:")
-print(temperaturas_maximas)
+print(temperaturas_maximas_por_ciudad)
 print("\nTemperatura promedio por día:")
-print(temperaturas_promedio)
+print(temperaturas_promedio_por_dia)
 print("\nDía con temperatura más baja según la ciudad:")
-print(dias_temperatura_minima)
+print(dias_temperatura_mas_baja)
